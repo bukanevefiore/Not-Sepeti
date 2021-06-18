@@ -4,17 +4,19 @@ class Kategori {
   String kategoriBaslik;
 
   Kategori(this.kategoriBaslik);  // verileri yazarken
-  Kategori.withID(this.kategoriID,this.kategoriBaslik);  // verileri okurken
+  Kategori.withID(this.kategoriID,this.kategoriBaslik);// verileri okurken
+
+
 
   Map<String, dynamic> toMap(){
     var map = Map<String, dynamic>();
-    map["kategoriID"] = kategoriID;
+    map["katogoriID"] = kategoriID;
     map["kategoriBaslik"] = kategoriBaslik;
     return map;
   }
 
   Kategori.fromMap(Map<String, dynamic> map){
-    this.kategoriID = map['kategoriID'];
+    this.kategoriID = map['katogoriID'];
     this.kategoriBaslik = map['kategoriBaslik'];
   }
 
